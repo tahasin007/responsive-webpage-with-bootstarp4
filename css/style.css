@@ -1,11 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Noto+Sans+JP:wght@100&family=Open+Sans&family=Oswald:wght@600&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,600&display=swap');
 
 *{
     box-shadow: border-box;
 }
 
-header, section{
+header,
+section,
+footer,
+body{
     overflow-x: hidden;
+}
+
+.section-1{
+    overflow-y: hidden;
 }
 
 .background{
@@ -53,6 +61,10 @@ header .nav-item:last-child{
     padding-right: 10.5rem;
 }
 
+/* header .navbar{
+    background: wheat;
+} */
+
 head .nav-item{
     padding: 0.9rem;
 }
@@ -71,7 +83,7 @@ header .row .col-md-5{
 
 header .row .col-md-7{
     padding: 22vmin 1vmin;
-    padding-bottom: 35vmin;
+    padding-bottom: 25vmin;
     font-family: 'Noto Sans JP', sans-serif;
     /* padding-top: 3rem;
     padding-bottom: 3rem; */
@@ -128,7 +140,7 @@ header .container-fluid .col-md-7 button{
     top: 7vmin;
     left: -18vmin;
     background: white;
-    padding: 1vmin 5vmin 20vmin 10vmin;
+    padding: 0vmin 5vmin 20vmin 10vmin;
     text-align: left;
     box-shadow: 0px 25px 42px rgba(0,0,0,0.2);
     z-index: 1;
@@ -151,9 +163,215 @@ header .container-fluid .col-md-7 button{
 
 .cover{
     width: 100%;
-    height: 55vmin;
+    height: 60vmin;
     background: url('../assets/celebrate.jpg');
     background-position: -20rem -20rem;
     background-repeat: no-repeat;
-    background-size: 150%;
+    background-size: 130%;
+    position: relative;
+}
+
+.cover .content{
+    background: rgba(0, 0, 0, 0.6);
+    height: 100%;
+    width: 100%;
+    padding-top: 20vmin;
+}
+
+.cover .content>h1{
+    font-family: Roboto;
+    color: whitesmoke;
+    font-size: 3rem;
+}
+
+.cover .content>p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.4rem;
+    color: #e5e5e5;
+}
+
+.numbers .rect{
+    position: relative;
+    z-index: 1;
+    background: white;
+    width: 17rem;
+    height: 12rem;
+    margin: 1rem;
+    border-radius: .5rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.numbers{
+    margin-top: -15vmin;
+}
+
+.numbers .rect h1{
+    font-family: 'Roboto';
+    color:#93BEC8;
+}
+
+.numbers .rect h1{
+    font-family: 'Oswald';
+}
+
+.purchase>h1{
+    padding-top: 4rem;
+    padding-bottom: 0.1rem;
+    font-family: 'Nunito', sans-serif;
+}
+
+.purchase>p {
+    color:rgba(0, 0, 0, 0.5);
+}
+
+.purchase .cards .card{
+    width: 20rem;
+    margin: 3vmin;
+}
+
+.cards div{
+    margin: 0;
+    padding: 0;
+}
+
+.section-2 .card-title {
+    background: rgba(208, 241, 241, 0.1);
+    padding: 1.4rem 2.5rem;
+    font-size: 1.5rem;
+}
+
+.card .card-text{
+    padding: 2.5rem 3rem;
+    color:rgba(0, 0, 0, 0.5);
+}
+
+.card .pricing{
+    background: rgba(208, 241, 241, 0.1);
+    border-top-left-radius: 170px;
+    border-top-right-radius: 170px;
+}
+
+.card .pricing>h1{
+    font-size: 1.5rem;
+    padding: 1rem 0.5rem;
+}
+
+.section-3{
+    height: 50vmin;
+    margin-top: 3rem;
+    background: #F4F4F4;
+}
+
+.section-3 .col-md-12>h1{
+    padding: 1rem 0;
+    color: black;
+    font-size: 2rem;
+}
+
+.section-3 .col-md-12>p{
+    padding:0 4rem;
+    padding-bottom: 1rem;
+    color: rgba(0,0,0,0.5);
+    font-size: 1.1rem;
+}
+
+.section-3 .desktop {
+    background: white;
+    display: inline-block;
+    border-radius: 3rem;
+    padding: 1.2rem .8rem; 
+    margin: 1rem;
+    width: 18rem;
+}
+
+.section-3 .desktop h3{
+    font-size: 2rem;
+    font-family: 'Oswald';
+    ;
+}
+
+.section-3 .desktop p{
+    font-size: 1.2rem;
+    color: rgba(0, 0, 0, 0.8);
+    font-family: 'Open Sans', sans-serif;
+}
+
+.section-4{
+    background: #F4F4F4;
+}
+
+.section-4 .container h1{
+    padding: 1rem 0;
+}
+
+.section-4 .team{
+    padding: 4rem 7rem;
+}
+
+.section-4 .card{
+    width: 20rem;
+    height: auto;
+}
+
+.section-4 .card .card-text{
+    padding: 0rem;
+}
+
+.section-4 .card .card-body>a{
+    font-size: 1.4rem;
+}
+
+.section-4 .carousel-item{
+    padding-left: .1rem;
+}
+
+.border-radius{
+    border-radius: 80px;
+    width: 60%;
+}
+
+.card .card-img-top img{
+    height: 13rem;
+}
+
+footer{
+    background: rgba(0, 0, 0, 0.85);
+    padding: 5rem 3rem;
+}
+
+footer p>span{
+    color: #276978;
+}
+
+footer input{
+    border: none !important;
+}
+
+footer input::placeholder {
+    color: whitesmoke !important;
+    font-family: 'Open Sans',
+    sans-serif !important;
+}
+
+footer .input-group .input-group-text{
+    background: #2C86B0;
+    border: none;
+}
+
+footer .column i{
+    color: tomato;
+}
+
+footer .column i+i{
+    padding: 0 0.5rem;
+}
+
+.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    z-index: 999;
+    transition: all .5s ease;
 }
